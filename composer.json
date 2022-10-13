@@ -1,0 +1,19 @@
+{
+    "name": "raj/contract",
+    "description": "This will send email to admin and save contract query in database",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Raj\\Contract\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Raj",
+            "email": "rajkumer2001@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
