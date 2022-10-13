@@ -1,5 +1,5 @@
 {
-    "name": "raj/contract",
+    "name": "rajdev/contract",
     "description": "This will send email to admin and save contract query in database",
     "type": "library",
     "license": "MIT",
