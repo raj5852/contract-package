@@ -1,6 +1,6 @@
 <?php
 
-namespace Raj\Contract\Modal;
+namespace Raj\Contract\Model;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
