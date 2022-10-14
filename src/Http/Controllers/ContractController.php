@@ -5,18 +5,21 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Raj\Contract\Mail\ContractMailable;
-use Raj\Contract\Modal\Contract;
+use Raj\Contract\Model\Contract;
 
 class ContractController extends Controller
 {
-    //
-    function index(){
+    function index()
+    {
         return view('contract::contract');
     }
-    function send(Request $request){
-        Mail::to(config('contract.send_email_to'))->send(new ContractMailable($request->message,$request->name));
+
+    function send(Request $request)
+    {
+        Mail::to(config('contract.send_email_to'))
+            ->send(new ContractMailable($request->message,$request->name));
+            
         Contract::create($request->all());
         return redirect(route('contract'));
     }
-
 }

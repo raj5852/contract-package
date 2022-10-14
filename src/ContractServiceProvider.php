@@ -32,8 +32,5 @@ class ContractServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/config/contract.php' => config_path('contract.php'),
         ]);
-    
-    
-
     }
 }
